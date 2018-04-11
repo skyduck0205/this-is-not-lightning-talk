@@ -1,0 +1,23 @@
+{
+  "name": "this-is-not-lightning-talk",
+  "description": "A countdown timer for lightning talks.",
+  "version": "0.0.1",
+  "homepage": "https://skyduck0205.github.io/this-is-not-lightning-talk/",
+  "author": {
+    "name": "skyduck0205",
+    "email": "skyduck0205@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skyduck0205/this-is-not-lightning-talk"
+  },
+  "bugs": "",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-load-plugins": "^1.5.0",
+    "jshint": "^2.9.4"
+  }
+}
