@@ -14,6 +14,7 @@
     this.playButton = document.querySelector('.play');
     this.pauseButton = document.querySelector('.pause');
     this.stopButton = document.querySelector('.stop');
+    this.ribbonLink = document.querySelector('.ribbon');
 
     this.box = null;
     this.countdown = null;
@@ -92,6 +93,7 @@
 
     function onPlayClick() {
       hide(self.playButton);
+      hide(self.ribbonLink);
       show(self.pauseButton);
 
       if (self.edit) {
@@ -118,6 +120,7 @@
       hide(self.stopButton);
       hide(self.countdown.node);
       show(self.playButton);
+      show(self.ribbonLink);
       show(self.box.node);
     }
   }
