@@ -228,7 +228,10 @@
     //
     function onCardDrag(card, direction) {
       if (direction === 'left') {
-        self.addCard(card.index + 1, COLORS[self.cards.length]);
+        var colors = COLORS.filter(function(color) {
+          return self.cards.findIndex(function(_card) { return _card.color === color; }) < 0;
+        });
+        self.addCard(card.index + 1, colors[0]);
       } else if (direction === 'right') {
         self.removeCard(card.index + 1);
       } else if (direction === 'up') {
