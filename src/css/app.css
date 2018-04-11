@@ -11,6 +11,7 @@
   text-shadow: 0 0 5px var(--shadow);
   box-sizing: border-box;
   user-select: none;
+  -webkit-user-select: none;
 }
 
 *.grabbing {
@@ -38,9 +39,9 @@ body {
 }
 
 .app {
-  position: absolute;
-  width: 1024px;
-  height: 768px;
+  position: relative;
+  min-width: 1280px;
+  min-height: 720px;
 }
 
 .play,
