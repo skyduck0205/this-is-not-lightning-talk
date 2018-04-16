@@ -46,19 +46,26 @@ body {
 
 .play,
 .stop,
-.pause {
+.pause,
+.fullscreen {
   z-index: 100;
   position: absolute;
-  top: 20px;
   font-size: 100px;
 }
 
 .play,
 .pause {
+  top: 20px;
   right: 20px;
 }
 
 .stop {
+  top: 20px;
+  left: 20px;
+}
+
+.fullscreen {
+  bottom: 20px;
   left: 20px;
 }
 
